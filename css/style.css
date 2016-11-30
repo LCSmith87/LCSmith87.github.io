@@ -1,0 +1,566 @@
+body, html {
+	font-family: 'Raleway', sans-serif;
+}
+
+button{
+	border: 2px solid rgba(255,255,255, 0.7);
+	background-color: rgba(0,0,0,0);
+	padding: 25px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+
+}
+
+button:hover {
+	border: 2px solid rgba(255,255,255, 1.0);
+}
+
+button:focus {
+	outline: 0;
+}
+
+.logo {
+	font-size: 30px;
+	color: #fff;
+	font-family: 'Lobster', cursive;
+}
+
+
+#main-hero {
+	background-image: url("../img/prairie-1246633_1920.jpg");
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+
+}
+
+#main-hero-overlay {
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+	background-color: rgba(195,47,52, 0.8);
+
+}
+
+#main-hero-wrapper {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+
+ }
+
+#main-hero-cta {
+	position: relative;
+	z-index: 3;
+	margin-bottom: 50px;
+}
+
+.main-hero-description h1{
+	color: #fff;
+	font-weight: 200;
+}
+
+.main-hero-description {
+	position: relative;
+	z-index: 3;
+	margin-bottom: 50px;
+}
+#mobile-nav, #reg-nav {
+	top: 0;
+	border-top: 2px solid #C32F34;
+	width: 100%;
+	position: fixed;
+	z-index: 4;
+	text-align: center;
+
+}
+
+#mobile-nav ul, #reg-nav ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+#mobile-nav ul li {
+	border-bottom: 1px solid #555;
+	padding: 25px;
+	color: #777;
+
+}
+
+#mobile-nav ul li:hover {
+	color: #C32F34;
+}
+
+#mobile-nav-button, #mobile-nav-items ul li, #reg-nav ul li {
+	z-index: 4;
+	cursor: pointer;
+-webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#skills {
+
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	padding-top: 75px;
+	padding-bottom: 75px;
+	background-color: #ddd;
+
+
+}
+
+#skillsCards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.skillsColumn {
+	width: 350px;
+	margin: 15px;
+	text-align: left;
+}
+
+.skillsColumnImage {
+	display: flex;
+	justify-content: center;
+}
+
+.skillsColumnImage img {
+	width: auto;
+	height: 100px;
+	margin: 10px;
+
+}
+
+.skillsColumnText {
+	font-size: 16px;
+	font-weight: 200;
+}
+
+.skillsColumnDescription {
+	font-size: 18px;
+}
+.skillsColumnText, .skillsColumnDescription {
+	height: 100px;
+
+}
+
+#skills h2 {
+	font-size: 22px;
+	font-weight: 200;
+	position: relative;
+	bottom: 15px;
+}
+
+#projects img {
+	height:250px;
+	margin: 25px;
+	margin-bottom: 5px;
+}
+
+#projects {
+	text-align: center;
+	background-color: #fff;
+	padding-top: 75px;
+	padding-right: 15px;
+	padding-bottom: 125px;
+}
+
+#dim-overlay {
+
+	display: none;
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.8);
+
+}
+
+.projectCardModalWrapper {
+	position: absolute;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}
+.projectCardModal {
+	display: none;
+	background-color: #fff;
+	position: relative;
+	margin: auto;
+	top: 0;
+	border-radius: 2px;
+	z-index: 6;
+	padding: 20px;
+
+}
+
+.projectCardModal i {
+	float: right;
+	font-size: 24px;
+	color: #666;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	bottom: 10px;
+	left: 10px;
+}
+
+.projectCardModalTitle {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.projectCardModalThumbnails {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 300px;
+
+}
+
+.projectCardModalThumbnails img {
+
+	width: 140px;
+	height: 90px;
+	margin-top: 5px;
+	cursor: pointer;
+	padding: 2px;
+}
+
+.projectCardModalThumbnails img:hover {
+	opacity: 0.7;
+}
+
+.projectCardModalImg img {
+	width: 300px;
+	height: auto;
+}
+
+.projectCardModal i:hover {
+	color: #333;
+}
+
+.thumbIsSelected {
+	border: 2px solid #333;
+}
+
+
+.projectSectionWrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+.projectCardOverlay {
+	position: absolute;
+	height: 250px;
+	width: 400px;
+	margin: 25px;
+	background-color: rgba(0,0,0,0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease;
+	cursor: pointer;
+
+
+}
+
+#projectCard-tapd-btn, #projectCard-solonomostudios-btn, #projectCard-front-btn, #projectCard-learning-btn, #projectCard-filemaker-btn, #projectCard-adtech-btn{
+	display: none;
+	position: relative;
+	right: 40px;
+}
+
+.projectCardOverlay:hover {
+	background-color: rgba(195,47,52, 0.8);
+}
+
+.projectCardOverlay:hover #projectCard-tapd-btn, .projectCardOverlay:hover #projectCard-solonomostudios-btn, .projectCardOverlay:hover #projectCard-front-btn, .projectCardOverlay:hover #projectCard-learning-btn, .projectCardOverlay:hover #projectCard-filemaker-btn, .projectCardOverlay:hover #projectCard-adtech-btn {
+	display: block;
+}
+
+.projectCard {
+	width: 400px;
+	position: relative;
+	overflow: hidden;
+	text-align: left;
+}
+
+.projectCardTitle, .projectCardDescription {
+
+	margin-left: 25px;
+
+}
+
+.projectCardTitle {
+	font-weight: 800;
+}
+
+.projectCardDescription {
+	font-weight: 200;
+}
+
+.projectCardModalCTA {
+	display: flex;
+	justify-content: center;
+}
+
+.projectCardModalCTA img {
+	height: 40px;
+}
+
+.projectCardModalCTA ul {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+
+#adtechCTA {
+	display: flex;
+	flex-direction: column;
+}
+
+#testimonial {
+	background-image: url("../img/startup-593299_1920.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	padding-top: 75px;
+	padding-bottom: 75px;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	position: relative;
+}
+
+#testimonial-overlay {
+	z-index: 2;
+	background-color: rgba(195,47,52, 0.8);
+	height: 550px;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+
+}
+
+#testimonial-text {
+	position: relative;
+	z-index: 3;
+	color: #fff;
+}
+
+#testimonial-text p {
+
+	font-size: 24px;
+	font-weight: 200;
+}
+
+#testimonial-text h4, #testimonial-text p  {
+	text-align: left;
+	margin-left: 25px;
+}
+
+#resume {
+	padding-top: 125px;
+	padding-bottom: 125px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+#resume h3 {
+	font-weight: 200;
+}
+
+#resume button, .projectCardModalCTA button {
+	border: 2px solid rgba(195,47,52, 0.6);
+	color: #C32F34;
+}
+
+#resume button:hover, .projectCardModalCTA button:hover {
+	border: 2px solid rgba(195,47,52, 1.0);
+}
+
+#contact {
+	background-color: #222;
+	padding-top: 75px;
+	padding-bottom: 75px;
+	color: #fff;
+
+
+}
+
+#contact h4 {
+		font-weight: 200;
+}
+
+#contact a {
+	color: #C32F34;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+#contact a:hover {
+	color: #A11D12;
+}
+
+#contact .wrapper {
+	display: flex;
+}
+
+.img-circle {
+	margin: 10px;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	filter: grayscale(100%);
+}
+#contact i {
+	color: #555;
+}
+
+
+@media only screen and (min-width : 320px) {
+
+
+#mobile-nav-button {
+
+	position: absolute;
+	right: 0;
+	z-index: 4;
+	font-size: 28px;
+	background-color: #C32F34;
+	color: #fff;
+	width: 50px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	margin-right: 10px;
+
+}
+
+#mobile-nav-items {
+	display: none;
+	z-index: 3;
+	height: 100vh;
+	width: 100%;
+	background-color: #222;
+	position: fixed;
+	top: 2px;
+}
+
+
+#reg-nav {
+	display: none;
+}
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+	#projectCard-tapd-btn, #projectCard-solonomostudios-btn, #projectCard-front-btn, #projectCard-learning-btn, #projectCard-filemaker-btn, #projectCard-adtech-btn{
+	right: 20px;
+}
+
+	#testimonial-text p {
+	font-size: 26px;
+}
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+		#testimonial-text p {
+	font-size: 30px;
+}
+
+#projectCard-tapd-btn, #projectCard-solonomostudios-btn, #projectCard-front-btn, #projectCard-learning-btn, #projectCard-filemaker-btn, #projectCard-adtech-btn{
+	right: 20px;
+}
+
+
+.projectCardModal {
+	display: none;
+	background-color: #fff;
+	width: 600px;
+	height: auto;
+	top: 150px;
+	border-radius: 2px;
+	z-index: 6;
+
+}
+
+.projectCardModalThumbnails {
+	width: 600px;
+}
+
+
+.projectCardModalImg img {
+	width: 600px;
+
+}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	#mobile-nav-button, #mobile-nav-items {
+		display: none;
+	}
+	#reg-nav {
+		display: block;
+		background-color: #222;
+		color: #777;
+		z-index: 4;
+	}
+	#reg-nav ul li {
+		display: inline;
+		padding: 20px;
+		transition: all 0.3s ease;
+	}
+	#reg-nav ul li:hover {
+		color: #C32F34;
+	}
+	.wrapper {
+		max-width: 1280px;
+		position: relative;
+		margin: auto;
+	}
+
+
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+		#testimonial-text p {
+	font-size: 38px;
+}
+
+
+}

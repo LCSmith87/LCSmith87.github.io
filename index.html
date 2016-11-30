@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Levi Smith - Really Cool Web Guy...</title>
+
+	<!--Set the viewport of the page do the device-width to help with mobile viewing. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/png" href="img/favicon_128.png">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway:200,400" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav>
+		<div id="mobile-nav">
+			<div id="mobile-nav-button" onclick="toggleMenu();">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</div>
+			<div id="mobile-nav-items">
+				<ul>
+					<li onclick="scrollToDiv('skills', true);">Skills</li>
+					<li onclick="scrollToDiv('projects', true);">Projects</li>
+					<li onclick="scrollToDiv('resume', true);">Resum&eacute;</li>
+					<li onclick="scrollToDiv('contact', true);">Contact</li>
+				</ul>
+			</div>
+		</div>
+		<div id="reg-nav">
+			<ul>
+				<li onclick="scrollToDiv('skills', false);">Skills</li>
+				<li onclick="scrollToDiv('projects', false);">Projects</li>
+				<li onclick="scrollToDiv('resume', false);">Resum&eacute;</li>
+				<li onclick="scrollToDiv('contact', false);">Contact</li>
+			</ul>
+		</div>
+	</nav>
+	<header>
+		<div id="main-hero-overlay"></div>
+		<section id="main-hero">
+			<div class="wrapper">
+				<div id="main-hero-wrapper">
+					<div class="placeholder"></div>
+					<div class="main-hero-description">
+						<span class="logo">LS</span>
+						<h1>Awesome development through HTML5, CSS3,<br>Javascript, Unity, and Node.JS</h1>
+					</div>
+					<div id="main-hero-cta">
+						<button onclick="scrollToDiv('skills', false);" class="read-more-btn">Read More</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</header>
+	<main>
+		<section id="skills">
+			<div class="wrapper">
+				<div id="skillsDescription">
+					<h1>Skills &amp; Expertise</h1>
+					<h2>Fast &amp; efficient development applying modern standards and practices</h2>
+				</div>
+				<div id="skillsCards">
+					<div class="skillsColumn">
+						<div class="skillsColumnImage">
+							<img class="skillsColumnIcon" src="img/HTML5_Logo_512.png" alt="HTML5 Logo">
+						</div>
+						<h3 class="skillsColumnTitle">Front-End Development</h3>
+						<p class="skillsColumnDescription">Building new websites, making updates, troubleshooting code. If it involves the web, I can help. I am a master with HTML5, CSS, and making the web work.</p>
+						<p class="skillsColumnText">I take your designs to create pixel perfect and awesome websites conforming to web standards and best practices</p>
+					</div>
+					<div class="skillsColumn">
+						<div class="skillsColumnImage">
+							<img class="skillsColumnIcon" src="img/Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript Logo">
+							<img class="skillsColumnIcon" src="img/nodejs-new-pantone-black.png" alt="node.js Logo">
+						</div>
+						<h3 class="skillsColumnTitle">JavaScript Development</h3>
+						<p class="skillsColumnDescription">Whether you're building a web app, browser extension, or just looking to add some cool functionality. I can help meet your needs</p>
+						<p class="skillsColumnText">I have extensive knowledge with JavaScript and can harness its' full potential to create stunning functionalities for you, your website, or webserver.</p>
+					</div>
+					<div class="skillsColumn">
+						<div class="skillsColumnImage">
+							<img class="skillsColumnIcon" src="img/unity-logo.png" alt="Unity Logo">
+						</div>
+						<h3 class="skillsColumnTitle">Game Development</h3>
+						<p class="skillsColumnDescription">I love building games, and I have built games in Unity using C#, JavaScript/HTML5 using Canvas and web libraries</p>
+						<p class="skillsColumnText">Unity, JavaScript, or Canvas. I have knowledge and experience with many libraries and platforms and can quickly get up to speed on the latest and greatest.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="projectCardModalWrapper">
+			<div class="projectCardModal" id="projectCard-tapd">
+				<i class="fa fa-times" onclick="closeOverlay();" aria-hidden="true"></i>
+				<div class="projectCardModalTitle">Tapd.</div>
+				<div class="projectCardModalImg"><img id="modalMainImg-tapd" src="img/tapd.png"></div>
+				<div class="projectCardModalThumbnails"><img onclick="replaceImage('modalMainImg-tapd',this);" id="initThumb-tapd"  src="img/tapd.png"><img onclick="replaceImage('modalMainImg-tapd',this);" src="img/tapd-screen696x696.jpg"><img onclick="replaceImage('modalMainImg-tapd',this);" src="img/tapd-screen696x696_2.jpg"><img onclick="replaceImage('modalMainImg-tapd',this);" src="img/tapd-screen696x696_3.jpg"><img  onclick="replaceImage('modalMainImg-tapd',this);" src="img/tapd-screen696x696_4.jpg"></div>
+				<div class="projectCardModalDescription"><p>Don't hit the wall and score as many points as you can!</p>
+				</div>
+				<div class="projectCardModalCTA">
+					<a href="https://itunes.apple.com/us/app/tapd./id1019295333" target="_blank"><img src="img/app-store.png"></a>
+				</div>
+			</div>
+		</div>
+		<div class="projectCardModalWrapper">
+			<div class="projectCardModal"  id="projectCard-solonomostudios">
+				<i class="fa fa-times" onclick="closeOverlay();" aria-hidden="true"></i>
+				<div class="projectCardModalTitle">Solonomo Studios</div>
+				<div class="projectCardModalImg"><img id="modalMainImg-solonomostudios" src="img/solonomostudios-logo.svg"></div>
+				<div class="projectCardModalThumbnails"><img onclick="replaceImage('modalMainImg-solonomostudios',this);" id="initThumb-solonomostudios"  src="img/solonomostudios.png"><img onclick="replaceImage('modalMainImg-solonomostudios',this);" src="img/solonomostudios_games.png"><img onclick="replaceImage('modalMainImg-solonomostudios',this);" src="img/solonomostudios_whole.png"><img  onclick="replaceImage('modalMainImg-solonomostudios',this);" src="img/solonomostudios_about.png"></div>
+				<div class="projectCardModalDescription"><p>Solonomo Studios is an independent game making studio dedicated to making high quality, simplistic, awesome games.</p>
+				</div>
+				<div class="projectCardModalCTA">
+					<a href="http://www.solonomostudios.com" target="_blank"><button>Solonomo Studios</button></a>
+				</div>
+			</div>
+		</div>
+		<div class="projectCardModalWrapper">
+			<div class="projectCardModal" id="projectCard-frontendpractice">
+				<i class="fa fa-times" onclick="closeOverlay();" aria-hidden="true"></i>
+				<div class="projectCardModalTitle">Front End Development Practice</div>
+				<div class="projectCardModalImg"><img id="modalMainImg-frontendpractice" src="img/codepen_1.png"></div>
+				<div class="projectCardModalThumbnails"><img onclick="replaceImage('modalMainImg-frontendpractice',this);" id="initThumb-frontendpractice"  src="img/codepen_1.png"><img onclick="replaceImage('modalMainImg-frontendpractice',this);" src="img/codepen_2.png"><img onclick="replaceImage('modalMainImg-frontendpractice',this);" src="img/codepen_3.png"></div>
+				<div class="projectCardModalDescription"><p>Check out my latest work turning random user designs into working prototypes on codepen.</p>
+				</div>
+				<div class="projectCardModalCTA">
+				<a href="http://codepen.io/levus87/" target="_blank"><button>Check out my codepen</button></a>
+				</div>
+			</div>
+		</div>
+		<div class="projectCardModalWrapper">
+			<div class="projectCardModal" id="projectCard-adtech">
+				<i class="fa fa-times" onclick="closeOverlay();" aria-hidden="true"></i>
+				<div class="projectCardModalTitle">Ad Tech &amp; Website Management</div>
+				<div class="projectCardModalImg"><img id="modalMainImg-adtech"src="img/pushdown_closed.png"></div>
+				<div class="projectCardModalThumbnails"><img onclick="replaceImage('modalMainImg-adtech',this);" id="initThumb-adtech"  src="img/pushdown_closed.png"><img onclick="replaceImage('modalMainImg-adtech',this);" src="img/pushdown_open.png"><img onclick="replaceImage('modalMainImg-adtech',this);" src="img/pe-advertise.png"><img onclick="replaceImage('modalMainImg-adtech',this);" src="img/olf.png"><img  onclick="replaceImage('modalMainImg-adtech',this);" src="img/statetable.png"></div>
+				<div class="projectCardModalDescription"><p>For PennWell Corporation, I have created many IAB standard rich media ad products. I also currently manage the CMS changes and custom HTML/CSS/JavaScript implementenations of over 60+ websites through Adobe AEM.</p>
+				</div>
+				<div class="projectCardModalCTA" id="adtechCTA">
+					<h3>Just a few of the recent projects I've worked on for PennWell</h3>
+					<ul>
+						<li><a href="http://www.ogj.com" target="_blank">O&amp;GJ Pushdown Ad Product</a></li>
+						<li><a href="http://www.power-eng.com/index/advertise.html" target="_blank">Power Engineering Advertise Page</a></li>
+						<li><a href="http://www.offshore-mag.com/leadership.html" target="_blank">Offshore Leadership Forum Page</a></li>
+						<li><a href="http://www.dentistryiq.com/articles/2016/10/2016-rdh-evillage-salary-survey-part-3-state-by-state-comparison-of-hourly-rates.html" target="_blank">DentistryIQ State Table</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="projectCardModalWrapper">
+			<div class="projectCardModal" id="projectCard-filemaker">
+				<i class="fa fa-times" onclick="closeOverlay();" aria-hidden="true"></i>
+				<div class="projectCardModalTitle">Filemaker Development</div>
+				<div class="projectCardModalImg"><img id="modalMainImg-filemaker"src="img/fm_1.png"></div>
+				<div class="projectCardModalThumbnails"><img onclick="replaceImage('modalMainImg-filemaker',this);" id="initThumb-filemaker"  src="img/fm_1.png"><img onclick="replaceImage('modalMainImg-filemaker',this);" src="img/fm_2.png"><img onclick="replaceImage('modalMainImg-filemaker',this);" src="img/fm_3.png"><img onclick="replaceImage('modalMainImg-filemaker',this);" src="img/fm_4.png"></div>
+				<div class="projectCardModalDescription"><p>For PennWell Corporation, I have created many Filemaker solutions that integrate through API's in order to streamline and increase efficiency in the ad production process</p>
+				</div>
+				<div class="projectCardModalCTA">
+					<ul>
+						<li>Attended Filemaker Devcon 2014 &amp; 2015</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="projectCardModalWrapper">
+			<div class="projectCardModal" id="projectCard-learningpractice">
+				<i class="fa fa-times" onclick="closeOverlay();" aria-hidden="true"></i>
+				<div class="projectCardModalTitle">What I'm learning right now</div>
+				<div class="projectCardModalImg"><img id="modalMainImg-learningpractice" src="img/narrative-794978_640.jpg"></div>
+				<div class="projectCardModalDescription"><p>My goal as a developer is to never stop learning and adapting to new and existing technologies. Below are just a few of the things I am learning right now.</p>
+				</div>
+				<div class="projectCardModalCTA">
+					<ul>
+						<li>Angular.JS</li>
+						<li>React.JS</li>
+						<li>Backbone.JS</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<section id="projects">
+			<div id="dim-overlay" onclick="closeOverlay();"></div>
+			<div class="wrapper">
+				<h1> Projects </h1>
+				<div class="projectSectionWrapper">
+					<div class="projectCard">
+						<div class="projectCardOverlay">
+							<div id="projectCard-tapd-btn">
+								<button onclick="openModal(true,'projectCard-tapd', 0);" class="read-more-btn">Read More</button>
+							</div>
+						</div>
+						<div class="projectCardWrapper">
+							<div class="projectCardImg"><img src="img/mobile-842814_640.jpg"></div>
+							<div class="projectCardBtn"></div>
+						</div>
+						<div class="projectCardTitle">Tapd.</div>
+						<div class="projectCardDescription">My first iOS game</div>
+					</div>
+					<div class="projectCard">
+						<div class="projectCardOverlay">
+							<div id="projectCard-solonomostudios-btn">
+								<button onclick="openModal(true,'projectCard-solonomostudios', 1);" class="read-more-btn">Read More</button>
+							</div>
+						</div>
+						<div class="projectCardWrapper">
+							<div class="projectCardImg"><img src="img/controller-1216816_640.jpg"></div>
+							<div class="projectCardBtn"></div>
+						</div>
+						<div class="projectCardTitle">Solonomo Studios</div>
+						<div class="projectCardDescription">A one man video game studio</div>
+					</div>
+					<div class="projectCard">
+						<div class="projectCardWrapper">
+						<div class="projectCardOverlay">
+							<div id="projectCard-front-btn">
+								<button onclick="openModal(true,'projectCard-frontendpractice', 2);" class="read-more-btn">Read More</button>
+							</div>
+						</div>
+							<div class="projectCardImg"><img src="img/children-593313_640.jpg"></div>
+							<div class="projectCardBtn"></div>
+						</div>
+						<div class="projectCardTitle">Front End Development Practice</div>
+						<div class="projectCardDescription">Other people's designs turned into functioning prototypes.</div>
+					</div>
+					<div class="projectCard">
+						<div class="projectCardWrapper">
+						<div class="projectCardOverlay">
+							<div id="projectCard-adtech-btn">
+								<button onclick="openModal(true,'projectCard-adtech', 3);" class="read-more-btn">Read More</button>
+							</div>
+						</div>
+							<div class="projectCardImg"><img src="img/night-692261_640.jpg"></div>
+							<div class="projectCardBtn"></div>
+						</div>
+						<div class="projectCardTitle">Ad Tech Development</div>
+						<div class="projectCardDescription">Created many digital advertising solutions to fulfill the needs of rich media ad units.</div>
+					</div>
+					<div class="projectCard">
+						<div class="projectCardWrapper">
+						<div class="projectCardOverlay">
+							<div id="projectCard-filemaker-btn">
+								<button onclick="openModal(true,'projectCard-filemaker', 4);" class="read-more-btn">Read More</button>
+							</div>
+						</div>
+							<div class="projectCardImg"><img src="img/server-1235959_640.jpg"></div>
+							<div class="projectCardBtn"></div>
+						</div>
+						<div class="projectCardTitle">Filemaker Development</div>
+						<div class="projectCardDescription">Created many database solutions from scratch to fulfill the needs of a production team.</div>
+					</div>
+					<div class="projectCard">
+						<div class="projectCardWrapper">
+						<div class="projectCardOverlay">
+							<div id="projectCard-learning-btn">
+								<button onclick="openModal(false,'projectCard-learningpractice', 5);" class="read-more-btn">Read More</button>
+							</div>
+						</div>
+							<div class="projectCardImg"><img src="img/narrative-794978_640.jpg"></div>
+							<div class="projectCardBtn"></div>
+						</div>
+						<div class="projectCardTitle">What I'm learning right now</div>
+						<div class="projectCardDescription">Never stop improving...</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="testimonial">
+			<div id="testimonial-overlay"></div>
+			<div class="wrapper">
+				<div id="testimonial-text">
+					<p>"Pennwell has benefited from Levi's inexhaustible ability to 'play around' with ideas, technology, concepts and persisting issues until something clicks.  He has saved many collective hours that would be spent fixing dead end issues and placed us in a spot where we can achieve at a much higher level.  He is highly committed to the job and consistently provides quality work."</p>
+					<h4>James Kirkland - PennWell</h4>
+				</div>
+			</div>
+		</section>
+		<section id="resume">
+			<div class="wrapper">
+				<h1>Resum&eacute; Download</h1>
+				<h3>For companies interested in a hard copy of my resum&eacute; as a PDF.</h3>
+				<a href="LSmithResume.pdf" target="_blank"><button>Download PDF Resume</button></a>
+			</div>
+		</section>
+	</main>
+	<footer id="contact">
+		<div class="wrapper">
+			<div id="bio-image">
+				<img class="img-circle" src="img/levi-photo.jpg" alt="Levi Smith Photo">
+			</div>
+			<div id="bio">
+				<h2>My name is Levi Smith and I love the web, <br>web development, and game development.</h2>
+				<h4>If you'd like to discuss potential employment opportunites,<br> please feel free to contact me.</h4>
+				<p><a href="mailto:LCSmith87@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> LCSmith87@gmail.com</a></p>
+				<a href="http://linkedin.com/in/levicodysmith" target="_blank"><i id="linkedin-logo" class="fa fa-linkedin-square" aria-hidden="true"></i> linkedin.com/in/levicodysmith</a>
+			</div>
+		</div>
+		<!-- Design found at http://michaelpumo.com/ -->
+	</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
+
