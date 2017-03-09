@@ -94,11 +94,12 @@ button:focus {
 
 }
 
-#mobile-nav ul li a {
+#mobile-nav ul li a, #reg-nav ul li a {
 	text-decoration: none;
+	color: #777;
 }
 
-#mobile-nav ul li a:visited {
+#mobile-nav ul li a:visited, #reg-nav ul li a:visited {
 	color: #777;
 }
 
@@ -106,7 +107,7 @@ button:focus {
 	color: #C32F34;
 }
 
-#mobile-nav-button, #mobile-nav-items ul li, #reg-nav ul li, #mobile-nav ul li a {
+#mobile-nav-button, #mobile-nav-items ul li, #reg-nav ul li, #mobile-nav ul li a, #reg-nav ul li a {
 	z-index: 4;
 	cursor: pointer;
 -webkit-user-select: none;
