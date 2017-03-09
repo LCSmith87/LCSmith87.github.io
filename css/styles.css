@@ -98,6 +98,10 @@ button:focus {
 	text-decoration: none;
 }
 
+#mobile-nav ul li a:visited {
+	color: #777;
+}
+
 #mobile-nav ul li:hover, #mobile-nav ul li a:hover {
 	color: #C32F34;
 }
