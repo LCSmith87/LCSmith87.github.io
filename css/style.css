@@ -87,18 +87,22 @@ button:focus {
 	list-style-type: none;
 }
 
-#mobile-nav ul li {
+#mobile-nav ul li, #mobile-nav ul li a {
 	border-bottom: 1px solid #555;
 	padding: 25px;
 	color: #777;
 
 }
 
-#mobile-nav ul li:hover {
+#mobile-nav ul li a {
+	text-decoration: none;
+}
+
+#mobile-nav ul li:hover, #mobile-nav ul li a:hover {
 	color: #C32F34;
 }
 
-#mobile-nav-button, #mobile-nav-items ul li, #reg-nav ul li {
+#mobile-nav-button, #mobile-nav-items ul li, #reg-nav ul li, #mobile-nav ul li a {
 	z-index: 4;
 	cursor: pointer;
 -webkit-user-select: none;
