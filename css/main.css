@@ -551,7 +551,7 @@ button:focus {
 		padding: 20px;
 		transition: all 0.3s ease;
 	}
-	#reg-nav ul li:hover {
+	#reg-nav ul li:hover, #reg-nav ul li a:hover {
 		color: #C32F34;
 	}
 	.wrapper {
