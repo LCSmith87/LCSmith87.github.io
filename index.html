@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Levi Smith - Really Cool Web Guy...</title>
+	<title>Levi Smith - Front End Developer</title>
 
 	<!--Set the viewport of the page do the device-width to help with mobile viewing. -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta charset="UTF-8">
+          <meta name="description" content="Thank you for checking out my portfolio, I have had a long career in the web industry and my passion is front end development!" />
+          <meta property="og:title" content="Levi Smith - Front End Developer" />
+          <meta property="og:description" content="Thank you for checking out my portfolio, I have had a long career in the web industry and my passion is front end development!" />
+          <meta property="og:image" content="https://lcsmith87.github.io/img/jack-anstey-XVoyX7l9ocY-unsplash.jpg" />
+          <meta property="twitter:title" content="Levi Smith - Front End Developer" />
+          <meta property="twitter:description" content="Thank you for checking out my portfolio, I have had a long career in the web industry and my passion is front end development!" />
+          <meta property="twitter:image" content="https://lcsmith87.github.io/img/jack-anstey-XVoyX7l9ocY-unsplash.jpg" />
+          <meta property="twitter:url" content="https://lcsmith87.github.io" />
 	<link rel="shortcut icon" type="image/png" href="img/favicon_128.png">
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway:200,400" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/style_v3.css">
+	<link rel="stylesheet" type="text/css" href="css/style_v4.css">
 </head>
 <body>
 	<nav>
@@ -47,7 +55,7 @@
 					<div class="placeholder"></div>
 					<div class="main-hero-description">
 						<span class="logo">LS</span>
-						<h1>Awesome development through HTML5, CSS3,<br>Javascript, Unity, and Node.JS</h1>
+						<h1>Front end developer,<br>SEO specialist, and entrepreneur</h1>
 					</div>
 					<div id="main-hero-cta">
 						<button onclick="scrollToDiv('skills', false);" class="read-more-btn">Read More</button>
@@ -61,33 +69,33 @@
 			<div class="wrapper">
 				<div id="skillsDescription">
 					<h1>Skills &amp; Expertise</h1>
-					<h2>Fast &amp; efficient development applying modern standards and practices</h2>
+					<h2>Modern web development with a keen ability to open 42 browser windows and problem solve.</h2>
 				</div>
 				<div id="skillsCards">
 					<div class="skillsColumn">
 						<div class="skillsColumnImage">
-							<img class="skillsColumnIcon" src="img/HTML5_Logo_512.png" alt="HTML5 Logo">
+							<img class="skillsColumnIcon" src="img/html5-js-css.png" alt="HTML5,CSS3,JavaScript Logo">
 						</div>
 						<h3 class="skillsColumnTitle">Front-End Development</h3>
-						<p class="skillsColumnDescription">Building new websites, making updates, troubleshooting code. If it involves the web, I can help. I am a master with HTML5, CSS, and making the web work.</p>
-						<p class="skillsColumnText">I take your designs to create pixel perfect and awesome websites conforming to web standards and best practices</p>
+						<p class="skillsColumnDescription">Building new websites, making updates, troubleshooting javascript. If it involves the web, I can help.</p>
+						<p class="skillsColumnText">I love taking designs and making pixel perfect websites from them.</p>
 					</div>
 					<div class="skillsColumn">
 						<div class="skillsColumnImage">
-							<img class="skillsColumnIcon" src="img/Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript Logo">
-							<img class="skillsColumnIcon" src="img/nodejs-new-pantone-black.png" alt="node.js Logo">
+							<img class="skillsColumnIcon" src="img/reactjs.png" alt="ReactJS Logo">
+							<img class="skillsColumnIcon" src="img/gatsbyjs.png" alt="GatsbyJS Logo">
 						</div>
 						<h3 class="skillsColumnTitle">JavaScript Development</h3>
-						<p class="skillsColumnDescription">Whether you're building a web app, browser extension, or just looking to add some cool functionality. I can help meet your needs</p>
-						<p class="skillsColumnText">I have extensive knowledge with JavaScript and can harness its' full potential to create stunning functionalities for you, your website, or webserver.</p>
+						<p class="skillsColumnDescription">I've built single page applications, static websites, browser extensions, and helpful scripts.</p>
+						<p class="skillsColumnText">JavaScript is my jam! I love working with ReactJS, and building static websites with GatsbyJS.</p>
 					</div>
 					<div class="skillsColumn">
 						<div class="skillsColumnImage">
-							<img class="skillsColumnIcon" src="img/unity-logo.png" alt="Unity Logo">
+							<img class="skillsColumnIcon" src="img/google.png" alt="Google Logo">
 						</div>
-						<h3 class="skillsColumnTitle">Game Development</h3>
-						<p class="skillsColumnDescription">I love building games, and I have built games in Unity using C#, JavaScript/HTML5 using Canvas and web libraries</p>
-						<p class="skillsColumnText">Unity, JavaScript, or Canvas. I have knowledge and experience with many libraries and platforms and can quickly get up to speed on the latest and greatest.</p>
+						<h3 class="skillsColumnTitle">Search Engine Optimization</h3>
+						<p class="skillsColumnDescription">Learning the in's and out's of SEO has advanced my career and made me a better web developer.</p>
+						<p class="skillsColumnText">On-page opimization, keyword research, and technical SEO is an important part of building any website.</p>
 					</div>
 				</div>
 			</div>
@@ -95,13 +103,10 @@
 		<div class="projectCardModalWrapper">
 			<div class="projectCardModal" id="projectCard-tapd">
 				<i class="fa fa-times" onclick="closeOverlay();" aria-hidden="true"></i>
-				<div class="projectCardModalTitle">Tapd.</div>
-				<div class="projectCardModalImg"><img id="modalMainImg-tapd" src="img/tapd.png"></div>
-				<div class="projectCardModalThumbnails"><img onclick="replaceImage('modalMainImg-tapd',this);" id="initThumb-tapd"  src="img/tapd.png"><img onclick="replaceImage('modalMainImg-tapd',this);" src="img/tapd-screen696x696.jpg"><img onclick="replaceImage('modalMainImg-tapd',this);" src="img/tapd-screen696x696_2.jpg"><img onclick="replaceImage('modalMainImg-tapd',this);" src="img/tapd-screen696x696_3.jpg"><img  onclick="replaceImage('modalMainImg-tapd',this);" src="img/tapd-screen696x696_4.jpg"></div>
-				<div class="projectCardModalDescription"><p>Don't hit the wall and score as many points as you can!</p>
-				</div>
-				<div class="projectCardModalCTA">
-					<a href="https://itunes.apple.com/us/app/tapd./id1019295333" target="_blank"><img src="img/app-store.png"></a>
+				<div class="projectCardModalTitle">Websites</div>
+				<div class="projectCardModalImg"><img id="modalMainImg-tapd" src="img/generatorninja.png"></div>
+				<div class="projectCardModalThumbnails"><img onclick="replaceImage('modalMainImg-tapd',this);" id="initThumb-tapd"  src="img/generatorninja.png"><img onclick="replaceImage('modalMainImg-tapd',this);" src="img/dashgen.png"><img onclick="replaceImage('modalMainImg-tapd',this);" src="img/projectspotless.png"><img onclick="replaceImage('modalMainImg-tapd',this);" src="img/onedollarbusinessplans.png"></div>
+				<div class="projectCardModalDescription"><p>Websites<ul><li><a href="https://generator.ninja">GeneratorNinja</a> - Static website built with ReactJS/GatsbyJS and hosted on an S3 bucket with Cloudfront as a CDN.</li><li><a href="https://dashgen.com">Dashgen.</a> - Wordpress website built with GeneratePress theme, hosted on Cloudways Linux server (Ubuntu) with Nginx PHP MySQL.</li><li><a href="https://projectspotless.com">Project Spotless</a> - Wordpress website built with Divi theme, hosted on DigitalOcean Linux server (Ubuntu) with Apache PHP MySQL.</li><li><a href="https://onedollarbusinessplans.com">One Dollar Business Plans</a> - Wordpress/WooCommerce website built with GeneratePress theme, hosted on Cloudways Linux server (Ubuntu) with Nginx PHP MySQL.</li></ul></p>
 				</div>
 			</div>
 		</div>
@@ -134,50 +139,20 @@
 		<div class="projectCardModalWrapper">
 			<div class="projectCardModal" id="projectCard-adtech">
 				<i class="fa fa-times" onclick="closeOverlay();" aria-hidden="true"></i>
-				<div class="projectCardModalTitle">Ad Tech &amp; Website Management</div>
-				<div class="projectCardModalImg"><img id="modalMainImg-adtech"src="img/pushdown_closed.png"></div>
-				<div class="projectCardModalThumbnails"><img onclick="replaceImage('modalMainImg-adtech',this);" id="initThumb-adtech"  src="img/pushdown_closed.png"><img onclick="replaceImage('modalMainImg-adtech',this);" src="img/pushdown_open.png"><img onclick="replaceImage('modalMainImg-adtech',this);" src="img/power-eng.png"><img onclick="replaceImage('modalMainImg-adtech',this);" src="img/olf.png"><img  onclick="replaceImage('modalMainImg-adtech',this);" src="img/statetable.png"></div>
-				<div class="projectCardModalDescription"><p>For PennWell Corporation, I have created many IAB standard rich media ad products. I also currently manage the CMS changes and custom HTML/CSS/JavaScript implementenations of over 60+ websites through Adobe AEM.</p>
-				</div>
-				<div class="projectCardModalCTA" id="adtechCTA">
-					<h3>Just a few of the recent projects I've worked on for PennWell</h3>
-					<ul>
-						<li><a href="http://www.ogj.com" target="_blank">O&amp;GJ Pushdown Ad Product</a></li>
-						<li><a href="http://www.power-eng.com/index/advertise.html" target="_blank">Power Engineering Advertise Page</a></li>
-						<li><a href="http://www.offshore-mag.com/leadership.html" target="_blank">Offshore Leadership Forum Page</a></li>
-						<li><a href="http://www.dentistryiq.com/articles/2016/10/2016-rdh-evillage-salary-survey-part-3-state-by-state-comparison-of-hourly-rates.html" target="_blank">DentistryIQ State Table</a></li>
-					</ul>
+				<div class="projectCardModalTitle">Browser Extension</div>
+				<div class="projectCardModalImg"><img id="modalMainImg-adtech"src="img/onpage.png"></div>
+				<div class="projectCardModalThumbnails"><img onclick="replaceImage('modalMainImg-adtech',this);" id="initThumb-adtech"  src="img/onpage.png"></div>
+				<div class="projectCardModalDescription"><p><a href="https://chrome.google.com/webstore/detail/gbadolndjfagdkeeepliecncmaalmkmp/">Onpage by Dashgen</a> is a browser extension to help check on-page SEO.</p>
 				</div>
 			</div>
 		</div>
 		<div class="projectCardModalWrapper">
-			<div class="projectCardModal" id="projectCard-filemaker">
+			<div class="projectCardModal" id="projectCard-learning">
 				<i class="fa fa-times" onclick="closeOverlay();" aria-hidden="true"></i>
-				<div class="projectCardModalTitle">Filemaker Development</div>
-				<div class="projectCardModalImg"><img id="modalMainImg-filemaker"src="img/fm_1.png"></div>
-				<div class="projectCardModalThumbnails"><img onclick="replaceImage('modalMainImg-filemaker',this);" id="initThumb-filemaker"  src="img/fm_1.png"><img onclick="replaceImage('modalMainImg-filemaker',this);" src="img/fm_2.png"><img onclick="replaceImage('modalMainImg-filemaker',this);" src="img/fm_3.png"><img onclick="replaceImage('modalMainImg-filemaker',this);" src="img/fm_4.png"></div>
-				<div class="projectCardModalDescription"><p>For PennWell Corporation, I have created many Filemaker solutions that integrate through API's in order to streamline and increase efficiency in the ad production process</p>
-				</div>
-				<div class="projectCardModalCTA">
-					<ul>
-						<li>Attended Filemaker Devcon 2014 &amp; 2015</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="projectCardModalWrapper">
-			<div class="projectCardModal" id="projectCard-learningpractice">
-				<i class="fa fa-times" onclick="closeOverlay();" aria-hidden="true"></i>
-				<div class="projectCardModalTitle">What I'm learning right now</div>
-				<div class="projectCardModalImg"><img id="modalMainImg-learningpractice" src="img/narrative-794978_640.jpg"></div>
-				<div class="projectCardModalDescription"><p>My goal as a developer is to never stop learning and adapting to new and existing technologies. Below are just a few of the things I am learning right now.</p>
-				</div>
-				<div class="projectCardModalCTA">
-					<ul>
-						<li>Angular.JS</li>
-						<li>React.JS</li>
-						<li>Backbone.JS</li>
-					</ul>
+				<div class="projectCardModalTitle">What I'm Learning</div>
+				<div class="projectCardModalImg"><img id="modalMainImg-learning"src="img/narrative-794978_640.jpg"></div>
+				<div class="projectCardModalThumbnails"><img onclick="replaceImage('modalMainImg-learning',this);" id="initThumb-learning"  src="img/narrative-794978_640.jpg"></div>
+				<div class="projectCardModalDescription"><p>ReactJS,GatsbyJS</p>
 				</div>
 			</div>
 		</div>
@@ -196,8 +171,8 @@
 							<div class="projectCardImg"><img src="img/mobile-842814_640.jpg"></div>
 							<div class="projectCardBtn"></div>
 						</div>
-						<div class="projectCardTitle">Tapd.</div>
-						<div class="projectCardDescription">My first iOS game</div>
+						<div class="projectCardTitle">Websites</div>
+						<div class="projectCardDescription">Portfolio of recent websites</div>
 					</div>
 					<div class="projectCard">
 						<div class="projectCardOverlay">
@@ -210,7 +185,7 @@
 							<div class="projectCardBtn"></div>
 						</div>
 						<div class="projectCardTitle">Solonomo Studios</div>
-						<div class="projectCardDescription">A one man video game studio</div>
+						<div class="projectCardDescription">An older project where I built an iOS game using Unity</div>
 					</div>
 					<div class="projectCard">
 						<div class="projectCardWrapper">
@@ -232,37 +207,24 @@
 								<button onclick="openModal(true,'projectCard-adtech', 3);" class="read-more-btn">Read More</button>
 							</div>
 						</div>
-							<div class="projectCardImg"><img src="img/night-692261_640.jpg"></div>
+							<div class="projectCardImg"><img src="img/browser_ntp.png"></div>
 							<div class="projectCardBtn"></div>
 						</div>
-						<div class="projectCardTitle">Ad Tech Development</div>
-						<div class="projectCardDescription">Created many digital advertising solutions to fulfill the needs of rich media ad units.</div>
-					</div>
-					<div class="projectCard">
-						<div class="projectCardWrapper">
-						<div class="projectCardOverlay">
-							<div id="projectCard-filemaker-btn">
-								<button onclick="openModal(true,'projectCard-filemaker', 4);" class="read-more-btn">Read More</button>
-							</div>
-						</div>
-							<div class="projectCardImg"><img src="img/server-1235959_640.jpg"></div>
-							<div class="projectCardBtn"></div>
-						</div>
-						<div class="projectCardTitle">Filemaker Development</div>
-						<div class="projectCardDescription">Created many database solutions from scratch to fulfill the needs of a production team.</div>
+						<div class="projectCardTitle">Browser Extension</div>
+						<div class="projectCardDescription">I've created two browser extensions, one of which is currently in the Google web store.</div>
 					</div>
 					<div class="projectCard">
 						<div class="projectCardWrapper">
 						<div class="projectCardOverlay">
 							<div id="projectCard-learning-btn">
-								<button onclick="openModal(false,'projectCard-learningpractice', 5);" class="read-more-btn">Read More</button>
+								<button onclick="openModal(true,'projectCard-learning', 4);" class="read-more-btn">Read More</button>
 							</div>
 						</div>
 							<div class="projectCardImg"><img src="img/narrative-794978_640.jpg"></div>
 							<div class="projectCardBtn"></div>
 						</div>
-						<div class="projectCardTitle">What I'm learning right now</div>
-						<div class="projectCardDescription">Never stop improving...</div>
+						<div class="projectCardTitle">What I'm Learning</div>
+						<div class="projectCardDescription">Never stop improving..</div>
 					</div>
 				</div>
 			</div>
@@ -278,25 +240,67 @@
 		</section>
 		<section id="resume">
 			<div class="wrapper">
-				<h1>Resum&eacute; Download</h1>
-				<h3>For companies interested in a hard copy of my resum&eacute; as a PDF.</h3>
-				<a href="LeviSmith_FrontEndResume_v3.pdf" target="_blank"><button>Download PDF Resume</button></a>
+				<h2>About Me</h2>
+				<div id="about">
+					<div class="aboutSection">
+						<div class="aboutSection_title">
+							<h3>About</h3>
+						</div>
+						<div class="aboutSection_info">
+							<p>When I'm not working, reading, or learning; my wife, daughter, and dogs take up the rest of my time in the best way possible. They are the reason I work hard and will always continue to work hard for them. I owe every bit of success to my wife, as without her I wouldn't try so hard to achieve more and be the best version of myself that I can be, she always pushes me and makes me better.</p>
+						</div>
+					</div>
+					<div class="aboutSection">
+						<div class="aboutSection_title">
+							<h3>Favorite Movies</h3>
+						</div>
+						<div class="aboutSection_info">
+							<ul>
+								<li>Hitchhiker's Guide to the Galaxy</li>
+								<li>Die Hard</li>
+								<li>Multiplicity</li>
+								<li>Big Fish</li>
+								<li>Harry Potter</li>
+								<li>LOTR</li>
+							</ul>
+						</div>
+					</div>
+					<div class="aboutSection">
+						<div class="aboutSection_title">
+							<h3>Favorite Books</h3>
+						</div>
+						<div class="aboutSection_info">
+							<ul>
+								<li>Harry Potter (Half Blood Prince if I have to choose...)</li>
+								<li>The Stand</li>
+								<li>We Are Legion (Bobiverse)</li>
+								<li>Off to Be the Wizard</li>
+								<li>Ready Player One</li>
+							</ul>
+						</div>
+					</div>
+					<div class="aboutSection">
+						<div class="aboutSection_title">
+							<h3>Other</h3>
+						</div>
+						<div class="aboutSection_info">
+							<p>I love to create new businesses and websites. I am consistently thinking and acting on new ideas and trying new things, it's just a part of who I am.</p>
+						</div>
+					</div>
+				</div>
+				<h2>Resum&eacute; Download</h2>
+				<h4>For companies interested in a hard copy of my resum&eacute; as a PDF.</h4>
+				<a href="Levi_Smith_Resume.pdf" target="_blank"><button>Download PDF Resume</button></a>
 			</div>
 		</section>
 	</main>
 	<footer id="contact">
 		<div class="wrapper">
-			<div id="bio-image">
-				<img class="img-circle" src="img/levi-photo.jpg" alt="Levi Smith Photo">
-			</div>
 			<div id="bio">
-				<h2>My name is Levi Smith and I love the web, <br>web development, and game development.</h2>
+				<h2>My name is Levi Smith and I love the web and front end development.</h2>
 				<h4>If you'd like to discuss potential employment opportunites,<br> please feel free to contact me.</h4>
-				<p><a href="https://dashgen.com/"><i class="fa fa-link" aria-hidden="true"></i> DashGen: Tulsa SEO & Web Design Services</a></p>
-				<p><a href="https://admaker.io/custom-ad-services/"><i class="fa fa-link" aria-hidden="true"></i> admaker.io/custom-ad-services/</a></p>
 				<p><a href="mailto:LCSmith87@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> LCSmith87@gmail.com</a></p>
 				<p><a href="http://linkedin.com/in/levicodysmith" target="_blank"><i id="linkedin-logo" class="fa fa-linkedin-square" aria-hidden="true"></i> linkedin.com/in/levicodysmith</a></p>
-				<p><a href="https://projectspotless.com/" target="_blank"><i class="fas fa-broom"></i> house cleaning Tulsa</a></p>
 				<a href="https://github.com/LCSmith87"><i id="github-logo" class="fa fa-github" aria-hidden="true"></i> github.com/LCSmith87</a>
 			</div>
 		</div>

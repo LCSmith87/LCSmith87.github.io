@@ -28,8 +28,7 @@ function closeOverlay () {
 	document.getElementById("projectCard-solonomostudios").style.display = 'none';
 	document.getElementById("projectCard-frontendpractice").style.display = 'none';
 	document.getElementById("projectCard-adtech").style.display = 'none';
-	document.getElementById("projectCard-filemaker").style.display = 'none';
-	document.getElementById("projectCard-learningpractice").style.display = 'none';
+	document.getElementById("projectCard-learning").style.display = 'none';
 
 }
 
